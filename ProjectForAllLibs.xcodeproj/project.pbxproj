@@ -15,8 +15,6 @@
 		1CDA265E1BD1450C00E98B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDA265C1BD1450C00E98B56 /* LaunchScreen.storyboard */; };
 		1CDA26691BD1450C00E98B56 /* ProjectForAllLibsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA26681BD1450C00E98B56 /* ProjectForAllLibsTests.m */; };
 		1CDA26741BD1450C00E98B56 /* ProjectForAllLibsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA26731BD1450C00E98B56 /* ProjectForAllLibsUITests.m */; };
-		1CDA26911BD147E000E98B56 /* libModuleALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDA26861BD147BE00E98B56 /* libModuleALib.a */; };
-		1CDA26921BD147E000E98B56 /* libModuleBLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDA268C1BD147C300E98B56 /* libModuleBLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,34 +31,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1CDA264A1BD1450C00E98B56;
 			remoteInfo = ProjectForAllLibs;
-		};
-		1CDA26851BD147BE00E98B56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1CDA26811BD147BD00E98B56 /* ModuleALib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CDA25991BCD604900E98B56;
-			remoteInfo = ModuleALib;
-		};
-		1CDA268B1BD147C300E98B56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1CDA26871BD147C300E98B56 /* ModuleBLib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CDA25AE1BCD60F800E98B56;
-			remoteInfo = ModuleBLib;
-		};
-		1CDA268D1BD147D900E98B56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1CDA26871BD147C300E98B56 /* ModuleBLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CDA25AD1BCD60F800E98B56;
-			remoteInfo = ModuleBLib;
-		};
-		1CDA268F1BD147D900E98B56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1CDA26811BD147BD00E98B56 /* ModuleALib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CDA25981BCD604900E98B56;
-			remoteInfo = ModuleALib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,8 +51,6 @@
 		1CDA266F1BD1450C00E98B56 /* ProjectForAllLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectForAllLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDA26731BD1450C00E98B56 /* ProjectForAllLibsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectForAllLibsUITests.m; sourceTree = "<group>"; };
 		1CDA26751BD1450C00E98B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CDA26811BD147BD00E98B56 /* ModuleALib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ModuleALib.xcodeproj; path = ../ModuleALib/ModuleALib.xcodeproj; sourceTree = "<group>"; };
-		1CDA26871BD147C300E98B56 /* ModuleBLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ModuleBLib.xcodeproj; path = ../ModuleBLib/ModuleBLib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CDA26911BD147E000E98B56 /* libModuleALib.a in Frameworks */,
-				1CDA26921BD147E000E98B56 /* libModuleBLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +81,6 @@
 		1CDA26421BD1450C00E98B56 = {
 			isa = PBXGroup;
 			children = (
-				1CDA26871BD147C300E98B56 /* ModuleBLib.xcodeproj */,
-				1CDA26811BD147BD00E98B56 /* ModuleALib.xcodeproj */,
 				1CDA264D1BD1450C00E98B56 /* ProjectForAllLibs */,
 				1CDA26671BD1450C00E98B56 /* ProjectForAllLibsTests */,
 				1CDA26721BD1450C00E98B56 /* ProjectForAllLibsUITests */,
@@ -176,22 +140,6 @@
 			path = ProjectForAllLibsUITests;
 			sourceTree = "<group>";
 		};
-		1CDA26821BD147BD00E98B56 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1CDA26861BD147BE00E98B56 /* libModuleALib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1CDA26881BD147C300E98B56 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1CDA268C1BD147C300E98B56 /* libModuleBLib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,8 +154,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1CDA268E1BD147D900E98B56 /* PBXTargetDependency */,
-				1CDA26901BD147D900E98B56 /* PBXTargetDependency */,
 			);
 			name = ProjectForAllLibs;
 			productName = ProjectForAllLibs;
@@ -283,16 +229,6 @@
 			mainGroup = 1CDA26421BD1450C00E98B56;
 			productRefGroup = 1CDA264C1BD1450C00E98B56 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1CDA26821BD147BD00E98B56 /* Products */;
-					ProjectRef = 1CDA26811BD147BD00E98B56 /* ModuleALib.xcodeproj */;
-				},
-				{
-					ProductGroup = 1CDA26881BD147C300E98B56 /* Products */;
-					ProjectRef = 1CDA26871BD147C300E98B56 /* ModuleBLib.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1CDA264A1BD1450C00E98B56 /* ProjectForAllLibs */,
@@ -301,23 +237,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1CDA26861BD147BE00E98B56 /* libModuleALib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libModuleALib.a;
-			remoteRef = 1CDA26851BD147BE00E98B56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1CDA268C1BD147C300E98B56 /* libModuleBLib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libModuleBLib.a;
-			remoteRef = 1CDA268B1BD147C300E98B56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1CDA26491BD1450C00E98B56 /* Resources */ = {
@@ -385,16 +304,6 @@
 			isa = PBXTargetDependency;
 			target = 1CDA264A1BD1450C00E98B56 /* ProjectForAllLibs */;
 			targetProxy = 1CDA26701BD1450C00E98B56 /* PBXContainerItemProxy */;
-		};
-		1CDA268E1BD147D900E98B56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ModuleBLib;
-			targetProxy = 1CDA268D1BD147D900E98B56 /* PBXContainerItemProxy */;
-		};
-		1CDA26901BD147D900E98B56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ModuleALib;
-			targetProxy = 1CDA268F1BD147D900E98B56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
