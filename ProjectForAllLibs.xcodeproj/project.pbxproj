@@ -15,6 +15,8 @@
 		1CDA265E1BD1450C00E98B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDA265C1BD1450C00E98B56 /* LaunchScreen.storyboard */; };
 		1CDA26691BD1450C00E98B56 /* ProjectForAllLibsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA26681BD1450C00E98B56 /* ProjectForAllLibsTests.m */; };
 		1CDA26741BD1450C00E98B56 /* ProjectForAllLibsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA26731BD1450C00E98B56 /* ProjectForAllLibsUITests.m */; };
+		1CDA26DF1BD4F1C300E98B56 /* libModuleALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDA26DE1BD4F1C300E98B56 /* libModuleALib.a */; settings = {ASSET_TAGS = (); }; };
+		1CDA26E41BD4F1E400E98B56 /* libModuleBLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDA26E31BD4F1E400E98B56 /* libModuleBLib.a */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1CDA266F1BD1450C00E98B56 /* ProjectForAllLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectForAllLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDA26731BD1450C00E98B56 /* ProjectForAllLibsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectForAllLibsUITests.m; sourceTree = "<group>"; };
 		1CDA26751BD1450C00E98B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CDA26DD1BD4F1C300E98B56 /* ModuleALib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleALib.h; sourceTree = "<group>"; };
+		1CDA26DE1BD4F1C300E98B56 /* libModuleALib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libModuleALib.a; path = "../../../../../Library/Developer/Xcode/DerivedData/ModuleALib-bsvmocjtxvxstockraojdwnnellw/Build/Products/Debug-iphonesimulator/libModuleALib.a"; sourceTree = "<group>"; };
+		1CDA26E21BD4F1E400E98B56 /* ModuleBLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleBLib.h; sourceTree = "<group>"; };
+		1CDA26E31BD4F1E400E98B56 /* libModuleBLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libModuleBLib.a; path = "../../../../../Library/Developer/Xcode/DerivedData/ModuleBLib-axocuoncekeplwbhjsbymbwmvbpn/Build/Products/Debug-iphonesimulator/libModuleBLib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDA26E41BD4F1E400E98B56 /* libModuleBLib.a in Frameworks */,
+				1CDA26DF1BD4F1C300E98B56 /* libModuleALib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +152,46 @@
 		1CDA26D81BD4F08900E98B56 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				1CDA26E01BD4F1E400E98B56 /* include */,
+				1CDA26E31BD4F1E400E98B56 /* libModuleBLib.a */,
+				1CDA26DB1BD4F1C300E98B56 /* include */,
+				1CDA26DE1BD4F1C300E98B56 /* libModuleALib.a */,
 			);
 			name = Libs;
+			sourceTree = "<group>";
+		};
+		1CDA26DB1BD4F1C300E98B56 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1CDA26DC1BD4F1C300E98B56 /* ModuleALib */,
+			);
+			name = include;
+			path = "../../../../../Library/Developer/Xcode/DerivedData/ModuleALib-bsvmocjtxvxstockraojdwnnellw/Build/Products/Debug-iphonesimulator/include";
+			sourceTree = "<group>";
+		};
+		1CDA26DC1BD4F1C300E98B56 /* ModuleALib */ = {
+			isa = PBXGroup;
+			children = (
+				1CDA26DD1BD4F1C300E98B56 /* ModuleALib.h */,
+			);
+			path = ModuleALib;
+			sourceTree = "<group>";
+		};
+		1CDA26E01BD4F1E400E98B56 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1CDA26E11BD4F1E400E98B56 /* ModuleBLib */,
+			);
+			name = include;
+			path = "../../../../../Library/Developer/Xcode/DerivedData/ModuleBLib-axocuoncekeplwbhjsbymbwmvbpn/Build/Products/Debug-iphonesimulator/include";
+			sourceTree = "<group>";
+		};
+		1CDA26E11BD4F1E400E98B56 /* ModuleBLib */ = {
+			isa = PBXGroup;
+			children = (
+				1CDA26E21BD4F1E400E98B56 /* ModuleBLib.h */,
+			);
+			path = ModuleBLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,8 +467,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleBLib-axocuoncekeplwbhjsbymbwmvbpn/Build/Products/Debug-iphonesimulator/include/ModuleBLib",
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleALib-bsvmocjtxvxstockraojdwnnellw/Build/Products/Debug-iphonesimulator/include/ModuleALib",
+				);
 				INFOPLIST_FILE = ProjectForAllLibs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleALib-bsvmocjtxvxstockraojdwnnellw/Build/Products/Debug-iphonesimulator",
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleBLib-axocuoncekeplwbhjsbymbwmvbpn/Build/Products/Debug-iphonesimulator",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bonafons.ProjectForAllLibs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -432,8 +486,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleBLib-axocuoncekeplwbhjsbymbwmvbpn/Build/Products/Debug-iphonesimulator/include/ModuleBLib",
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleALib-bsvmocjtxvxstockraojdwnnellw/Build/Products/Debug-iphonesimulator/include/ModuleALib",
+				);
 				INFOPLIST_FILE = ProjectForAllLibs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleALib-bsvmocjtxvxstockraojdwnnellw/Build/Products/Debug-iphonesimulator",
+					"/Users/yannbonafons/Library/Developer/Xcode/DerivedData/ModuleBLib-axocuoncekeplwbhjsbymbwmvbpn/Build/Products/Debug-iphonesimulator",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bonafons.ProjectForAllLibs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
