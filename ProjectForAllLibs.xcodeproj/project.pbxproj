@@ -101,6 +101,7 @@
 		1CDA264D1BD1450C00E98B56 /* ProjectForAllLibs */ = {
 			isa = PBXGroup;
 			children = (
+				1CDA26D81BD4F08900E98B56 /* Libs */,
 				1CDA26511BD1450C00E98B56 /* AppDelegate.h */,
 				1CDA26521BD1450C00E98B56 /* AppDelegate.m */,
 				1CDA26541BD1450C00E98B56 /* ViewController.h */,
@@ -138,6 +139,13 @@
 				1CDA26751BD1450C00E98B56 /* Info.plist */,
 			);
 			path = ProjectForAllLibsUITests;
+			sourceTree = "<group>";
+		};
+		1CDA26D81BD4F08900E98B56 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
